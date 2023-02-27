@@ -1,4 +1,5 @@
 ﻿using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,14 +8,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    public interface IProductDal
+    public interface IProductDal:IEntityDal<Product>
     {
-        List<Product> GetAll();
-        List<Product> GetAllByCategoryId(int categoryId);
-        Product GetById(int productId);
-        void Add(Product product);
-        void Update(Product product);
-        void Delete(Product product);
-
+        List<ProductDetailDto> GetProductDetails();
     }
 }
