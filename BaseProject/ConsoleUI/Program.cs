@@ -28,3 +28,4 @@ Console.WriteLine("Test for backend");
 //Console.WriteLine("--------------Gey by Product Id------------------");
 //Product product1 = productManager.GetById(1).Data;
 //Console.WriteLine($"Product{product1.ProductId}: Name= {product1.ProductName} with price {product1.UnitPrice} in stock in numbers {product1.UnitsInStock}");
+Console.WriteLine("Github Actions Test");
