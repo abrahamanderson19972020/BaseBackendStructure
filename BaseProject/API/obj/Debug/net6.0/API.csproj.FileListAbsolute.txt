@@ -78,3 +78,12 @@ C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\obj\Deb
 C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\obj\Debug\net6.0\API.csproj.CopyComplete
 C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\obj\Debug\net6.0\ref\API.dll
+C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\bin\Debug\net6.0\Business.dll
+C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\bin\Debug\net6.0\Business.pdb
+C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Bruker\OneDrive\Desktop\C#\BaseBackendStructure\BaseProject\API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll

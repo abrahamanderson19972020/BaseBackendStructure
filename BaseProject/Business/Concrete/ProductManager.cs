@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Utilities.Constants;
+using Business.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
@@ -18,19 +20,54 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
-        public List<Product> GetAll()
+        public IResult Add(Product product)
         {
-           return _productDal.GetAll(); 
+            if(product.ProductName.Length < 2)
+            {
+                return new ErrorResult(Messages.ItemNameInvalid);
+            }
+            _productDal.Add(product);
+            return new SuccessResult(Messages.ItemAdded);
         }
 
-        public List<Product> GetAllByCategoryId(int categoryId)
+        public IResult Delete(Product product)
         {
-            return _productDal.GetAll(p => p.CategoryId == categoryId);
+            _productDal.Delete(product);
+            return new SuccessResult(Messages.ItemRemoved);
         }
 
-        public List<ProductDetailDto> GetProductDetails()
+        public IDataResult<List<Product>> GetAll()
         {
-            return _productDal.GetProductDetails();
+            var products = _productDal.GetAll();    
+           return new SuccessDataResult<List<Product>>(products, Messages.AllItems);
+        }
+
+        public IDataResult<List<Product>> GetAllByCategoryId(int categoryId)
+        {
+            var products = _productDal.GetAll(p => p.CategoryId == categoryId);
+            return new SuccessDataResult<List<Product>>(products);
+        }
+
+        public IDataResult<Product> GetById(int productId)
+        {
+            var product = _productDal.Get(p => p.ProductId == productId);
+            if(product !=null) return new SuccessDataResult<Product>(product);
+            else return new ErrorDataResult<Product>(null, Messages.ErrorItem);
+        }
+
+        public IDataResult<List<ProductDetailDto>> GetProductDetails()
+        {
+            var result = _productDal.GetProductDetails();
+            if(result != null)
+            return new SuccessDataResult<List<ProductDetailDto>>(result,Messages.AllItems);
+
+            else return new ErrorDataResult<List<ProductDetailDto>>(null, Messages.ErrorItem);
+        }
+
+        public IResult Update(Product product)
+        {
+            _productDal.Update(product);
+            return new SuccessResult(Messages.ItemUpdated);
         }
     }
 }
