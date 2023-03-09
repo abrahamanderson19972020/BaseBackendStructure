@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\Bruker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bruker\\AppData\\Roaming\\NuGet\\NuGet.Config",

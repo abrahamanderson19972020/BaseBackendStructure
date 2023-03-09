@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KxyM0Ic4W7WzcbDhSBlWtHJdsdAxl3sNea0QPO7ECK8+YDIVqQHRtN0YsSluDjqnoYp0L2YxolZmZWfvFgZ4nA==",
+  "dgSpecHash": "W02d4hO1tuc4li5PvUQ+IiA0Hfxy9igDj6SEzt4Y4AU0CJ/wxru7lyCpUpF5IAsC5Vxr/LqujWkCJV86SlubSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QixZMyHrX9u3b2lkvZiFgDO1EfcVLnstWeGjhHWCdF5HlSq0T7xAk9zgRuBM/U1OMHbaa4bLRxKR9QZlVFNjXw==",
+  "dgSpecHash": "Jd5j+9nDTm/+0REz3vLPfGpUsy/pu6brlJw4m5p8VcB8XtopqlszyN4tMxhMYJMaN0rugC+ecOsi+VVizfZnIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bruker\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Bruker\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

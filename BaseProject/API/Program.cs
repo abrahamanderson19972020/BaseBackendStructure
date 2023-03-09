@@ -29,6 +29,14 @@ builder.Services.AddSingleton<IUserDal,EfUserDal>();
 builder.Services.AddSingleton<IUserService, UserManager>();
 builder.Services.AddSingleton<IAuthService,AuthManager>();
 builder.Services.AddSingleton<ITokenHelper,JwtHelper>();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MyAllowSpecificOrigins",
+                      builder =>
+                      {
+                          builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod();                               
+                      });
+});
 builder.Services.AddEndpointsApiExplorer();
 var tokenOptions = configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
@@ -59,6 +67,7 @@ if (app.Environment.IsDevelopment())
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
+app.UseCors("MyAllowSpecificOrigins");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

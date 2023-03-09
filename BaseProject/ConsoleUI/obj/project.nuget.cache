@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9LRaK4bDtqu66MEfM3okYOM08t1oYqK/FqztvwPIoCAUyM02LVkEHiOz2c4zRo6P+OMzNO5Hy3ztOi3Rbbdyfg==",
+  "dgSpecHash": "pHLBtwyBDxERccoTWeMuBGnA0+Mg/oA0PXZ20mE3Uh0lHCGfQyz+bIguuPnVIQa5/QjqXYen8rrbC92a5esTbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\ConsoleUI\\ConsoleUI.csproj",
+  "projectFilePath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bruker\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Bruker\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

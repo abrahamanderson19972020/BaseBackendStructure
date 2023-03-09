@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Business\\Business.csproj": {}
+    "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Business\\Business.csproj": {
+    "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\Bruker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Business\\obj\\",
+        "outputPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bruker\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj"
+              "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Bruker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bruker\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,8 +95,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj"
+              "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -139,14 +139,14 @@
         }
       }
     },
-    "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj": {
+    "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Bruker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\C#\\BaseBackendStructure\\BaseProject\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Bruker\\OneDrive\\Desktop\\DeployedProjects\\BaseBackendStructure\\BaseProject\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bruker\\AppData\\Roaming\\NuGet\\NuGet.Config",
