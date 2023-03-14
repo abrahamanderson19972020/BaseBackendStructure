@@ -3,13 +3,24 @@
     <app-category></app-category>
   </div>
   <div class="col-md-9">
-    <h3>Categories</h3>
+    <h3>Products</h3>
     <div
       *ngIf="dataLoaded == false"
       class="spinner-border text-warning dataspinner"
       role="status"
     >
       <span class="sr-only"></span>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Product Search</label>
+      <input
+        type="text"
+        [(ngModel)]="filterText"
+        class="form-control"
+        id="filterText"
+        aria-describedby="emailHelp"
+        placeholder="Product Name"
+      />
     </div>
     <table class="table table-striped">
       <thead>
@@ -19,17 +30,28 @@
           <th scope="col">Product Name</th>
           <th scope="col">Units in Stock</th>
           <th scope="col">Unit Price</th>
+          <th scope="col">Unit Price After VAT(10%)</th>
+          <th scope="col">Cart</th>
         </tr>
       </thead>
       <tbody *ngIf="products">
-        <tr *ngFor="let product of products">
+        <tr *ngFor="let product of products | textfilter : filterText">
           <th scope="row">{{ product.productId }}</th>
           <td>{{ product.categoryId }}</td>
           <td>{{ product.productName }}</td>
           <td>{{ product.unitsInStock }}</td>
-          <td>{{ product.unitPrice }}</td>
+          <td>{{ product.unitPrice | currency }}</td>
+          <td>{{ product.unitPrice | vat : 10 | currency }}</td>
+          <td>
+            <button class="btn btn-success" (click)="addToCart(product)">
+              Add to Cart
+            </button>
+          </td>
         </tr>
       </tbody>
     </table>
+    <button class="btn btn-primary" routerLink="/products/add">
+      Add New Product
+    </button>
   </div>
 </div>

@@ -1,0 +1,97 @@
+<div class="outer">
+  <div class="container">
+    <div class="row">
+      <div class="offsett-md-2 col-lg-5 col-md-7 offsett-lg-4 offset-md-3">
+        <div class="panel border bg-white">
+          <div class="panel-heading">
+            <h3 class="pt-3 font-weight-bold">Add Product</h3>
+            <div class="panel-body p-3">
+              <form [formGroup]="productAddForm">
+                <div class="form-group pt-3">
+                  <div
+                    class="input-field"
+                    [class.error]="
+                      productAddForm.controls['productName'].dirty &&
+                      productAddForm.hasError('required', 'productName')
+                    "
+                  >
+                    <span class="fa fa-file p-2"></span
+                    ><input
+                      formControlName="productName"
+                      type="text"
+                      class="text"
+                      placeholder="Product Name"
+                    />
+                  </div>
+                  <small
+                    *ngIf="
+                      productAddForm.controls['productName'].dirty &&
+                      productAddForm.hasError('required', 'productName')
+                    "
+                    class="text-danger"
+                    >*Product Name is required</small
+                  >
+                </div>
+                <div class="form-group pt-3">
+                  <div class="input-field">
+                    <span class="fa fa-file p-2"></span
+                    ><input
+                      formControlName="categoryId"
+                      type="number"
+                      class="text"
+                      placeholder="Category Id"
+                    />
+                  </div>
+                </div>
+                <div class="form-group pt-3">
+                  <div
+                    class="input-field"
+                    [class.error]="
+                      productAddForm.controls['unitPrice'].dirty &&
+                      productAddForm.hasError('required', 'unitPrice')
+                    "
+                  >
+                    <span class="fa fa-file p-2"></span
+                    ><input
+                      formControlName="unitPrice"
+                      type="number"
+                      class="text"
+                      placeholder="Unit Price"
+                    />
+                  </div>
+                  <small
+                    *ngIf="
+                      productAddForm.controls['unitPrice'].dirty &&
+                      productAddForm.hasError('required', 'unitPrice')
+                    "
+                    class="text-danger"
+                    >*Unit Price is required</small
+                  >
+                </div>
+                <div class="form-group pt-3">
+                  <div class="input-field">
+                    <span class="fa fa-file p-2"></span
+                    ><input
+                      formControlName="unitsInStock"
+                      type="number"
+                      class="text"
+                      placeholder="Units In Stock"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  (click)="onAddProduct()"
+                  type="submit"
+                  class="btn btn-primary btn-block mt-4 w-100"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

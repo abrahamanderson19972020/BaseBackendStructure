@@ -1,6 +1,19 @@
 <h3>Categories</h3>
 <ul class="list-group list-group-flush">
-  <li class="list-group-item" *ngFor="let category of categories">
+  <li
+    style="cursor: pointer"
+    [class]="setAllCategoryClass()"
+    routerLink="/products"
+  >
+    All Products
+  </li>
+  <li
+    [class]="setCurrentCategoryClass(category)"
+    *ngFor="let category of categories"
+    (click)="setActiveCategory(category)"
+    style="cursor: pointer"
+    routerLink="/products/{{ category.categoryId }}"
+  >
     {{ category.categoryName }}
   </li>
 </ul>

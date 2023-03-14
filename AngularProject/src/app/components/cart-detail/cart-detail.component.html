@@ -1,0 +1,26 @@
+<h3>Cart Details</h3>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Product Id</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Category Id</th>
+      <th scope="col">Unit Price</th>
+      <th scope="col">Unit Price After Vat</th>
+      <th scope="col">Units In Stock</th>
+      <th scope="col">Quantity</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="cartDetails">
+    <tr *ngFor="let cart of cartDetails">
+      <th scope="row">{{ cart.product.productId }}</th>
+      <td>{{ cart.product.productName }}</td>
+      <td>{{ cart.product.categoryId }}</td>
+      <td>{{ cart.product.unitPrice }}</td>
+      <td>{{ cart.product.unitPrice | vat : 10 | currency }}</td>
+      <td>{{ cart.product.unitsInStock }}</td>
+      <td>{{ cart.quantity }}</td>
+    </tr>
+  </tbody>
+</table>

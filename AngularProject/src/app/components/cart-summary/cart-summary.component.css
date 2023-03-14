@@ -1,0 +1,17 @@
+.dropdown-menu {
+  margin: 2%;
+  cursor: pointer;
+  background-color: #c9eeff;
+}
+.badge {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+span {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.dropdown-item {
+  font-weight: 700;
+  color: coral;
+}
