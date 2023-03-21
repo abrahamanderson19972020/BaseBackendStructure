@@ -1,0 +1,110 @@
+<section class="user">
+  <div class="user_options-container">
+    <div class="user_options-text">
+      <div class="user_options-unregistered">
+        <h2 class="user_unregistered-title">Already have an account?</h2>
+
+        <button
+          class="user_unregistered-signup"
+          id="signup-button"
+          (click)="login()"
+        >
+          Login
+        </button>
+      </div>
+
+      <div class="user_options-registered">
+        <h2 class="user_registered-title">Have an account?</h2>
+        <button class="user_registered-login" id="login-button">Login</button>
+      </div>
+    </div>
+
+    <div class="user_options-forms" id="user_options-forms">
+      <div class="user_forms-login">
+        <h2 class="forms_title">Sign Up</h2>
+        <form class="forms_form" [formGroup]="registerForm">
+          <fieldset class="forms_fieldset">
+            <div class="forms_field">
+              <input
+                formControlName="email"
+                type="email"
+                placeholder="Email"
+                class="forms_field-input"
+                required
+                autofocus
+              />
+              <small
+                *ngIf="
+                  registerForm.controls['email'].dirty &&
+                  registerForm.hasError('required', 'email')
+                "
+                class="text-danger"
+                >*Email is required</small
+              >
+            </div>
+            <div class="forms_field">
+              <input
+                formControlName="password"
+                id="#pass"
+                type="password"
+                placeholder="Password"
+                class="forms_field-input"
+                required
+              />
+              <small
+                *ngIf="
+                  registerForm.controls['password'].dirty &&
+                  registerForm.hasError('required', 'password')
+                "
+                class="text-danger"
+                >*Password is required</small
+              >
+            </div>
+            <div class="forms_field">
+              <input
+                formControlName="firstName"
+                type="text"
+                placeholder="First Name"
+                class="forms_field-input"
+                required
+              />
+              <small
+                *ngIf="
+                  registerForm.controls['firstName'].dirty &&
+                  registerForm.hasError('required', 'firstName')
+                "
+                class="text-danger"
+                >*First Name is required</small
+              >
+            </div>
+            <div class="forms_field">
+              <input
+                formControlName="lastName"
+                type="text"
+                placeholder="Last Name"
+                class="forms_field-input"
+                required
+              />
+              <small
+                *ngIf="
+                  registerForm.controls['lastName'].dirty &&
+                  registerForm.hasError('required', 'lastName')
+                "
+                class="text-danger"
+                >*Last Name is required</small
+              >
+            </div>
+          </fieldset>
+          <div class="forms_buttons">
+            <input
+              type="submit"
+              value="Sign Up"
+              class="forms_buttons-action"
+              (click)="register()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

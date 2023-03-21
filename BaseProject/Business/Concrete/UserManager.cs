@@ -21,6 +21,16 @@ namespace Business.Concrete
             _userDal.Add(user);
         }
 
+        public void Delete(User user)
+        {
+            _userDal.Delete(user);
+        }
+
+        public List<User> GetAllUsers()
+        {
+            return _userDal.GetAll();
+        }
+
         public User GetByMail(string email)
         {
             var user = _userDal.Get(u =>u.Email == email);
@@ -31,6 +41,11 @@ namespace Business.Concrete
         {
            var claims =  _userDal.GetClaims(user);
             return claims;  
+        }
+
+        public void Update(User user)
+        {
+            _userDal.Update(user);
         }
     }
 }

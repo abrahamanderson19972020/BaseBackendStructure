@@ -18,9 +18,16 @@ namespace API.Controllers
         [HttpPost("login")]
         public IActionResult Login(UserForLoginDto userForLoginDto)
         {
-            var result = _authService.Login(userForLoginDto);
-            if(result.Success) return Ok(result);
-            return Unauthorized(result.Message);
+            var userToLogin = _authService.Login(userForLoginDto);
+            if(!userToLogin.Success) return BadRequest(userToLogin.Message);
+            var result = _authService.CreateAccessToken(userToLogin.Data);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest(result.Message);
+
         }
         [HttpPost("register")]
         public IActionResult Register(UserForRegisterDto userForRegisterDto)
