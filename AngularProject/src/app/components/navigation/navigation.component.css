@@ -2,11 +2,11 @@
   cursor: pointer;
 }
 .nav-link {
-  color: #002b5b;
+  color: #222831;
   font-weight: 700;
 }
 .navbar-brand {
-  color: #002b5b;
+  color: #222831;
   font-weight: 700;
 }
 @media (min-width: 768px) {

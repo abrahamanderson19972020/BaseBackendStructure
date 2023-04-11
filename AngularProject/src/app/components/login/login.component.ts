@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
           this.loginForm.reset();
           setTimeout(() => {
             this.router.navigate(['products']);
-          }, 1000);
+          }, 100);
         },
         (error) => {
           this.toastrService.error('Authentication fail', 'Error');

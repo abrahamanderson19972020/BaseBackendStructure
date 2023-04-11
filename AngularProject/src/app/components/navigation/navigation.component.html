@@ -1,6 +1,6 @@
 <nav
   class="navbar navbar-expand-md navbar-dark"
-  style="background-color: #ea5455;"
+  style="background-color: #eeeeee"
 >
   <div class="container-fluid">
     <div
@@ -8,7 +8,7 @@
     >
       <ul class="navbar-nav me-auto">
         <li class="nav-item active">
-          <a class="nav-link" routerLink="/home">Home</a>
+          <a class="nav-link" routerLink="/">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/products">Products</a>
@@ -50,7 +50,10 @@
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" outerLink="/login" *ngIf="!(userLoggedIn | async)"
+          <a
+            class="nav-link"
+            routerLink="/login"
+            *ngIf="!(userLoggedIn | async)"
             >Login</a
           >
         </li>
